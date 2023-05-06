@@ -1,3 +1,16 @@
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(13, 13, 13);
+    border-radius: 2px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(19, 19, 19);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -125,7 +138,6 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(10, 10, 10);
 }
 
 .column2 .e1 .hovera0 {
@@ -165,20 +177,58 @@ nav ul li a:hover {
     border: rgba(37, 99, 235) solid 2px;
 }
 
-@media screen and (max-width: 700px){
-    .column2 .e1 .hovera1,.column2 .e1 .hovera0{
-        padding: 4px 30px;
-        font-size: 18px;
-        margin: 5px;
+@media screen and (max-width: 700px) {
+
+    .column2 .e1 .hovera0,
+    .column2 .e1 .hovera1 {
+        display: grid;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
     }
+
     .column2 {
         margin-top: 90px;
+        max-height: 250px;
     }
+
     .column1 {
         margin-top: 90px;
     }
 }
 
-.column3 {
-    background-color: rgb(10, 10, 10);
+/*.column3 {
+    
+}*/
+
+.column3 .e1 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column3 .e1 .e1-0 {
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column3 .e1 .e1-0 h1 {
+    margin-top: 5px;
+    color: #ffffff;
+    display: flex;
+}
+
+#e-1-h1 {
+    text-shadow: 0px 0px 50px #ffe187;
+    z-index: 2;
+    font-size: 90px;
+    background: -webkit-linear-gradient(-90deg,#ffd559,#fc2c11);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
